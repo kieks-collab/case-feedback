@@ -84,6 +84,7 @@
       </select>
     </label>
     <label>Case name / source<input type="text" id="m_casename" placeholder="e.g. Hugo Boss India market entry"></label>
+    <label>Industry / sector<input type="text" id="m_industry" placeholder="e.g. Fashion & apparel, Healthcare, FMCG"></label>
     <label>Difficulty
       <select id="m_difficulty">
         <option>Easy</option>
@@ -269,6 +270,7 @@
     out += `Date:        ${document.getElementById('m_date').value || '—'}\n`;
     out += `Case type:   ${document.getElementById('m_type').value}\n`;
     out += `Case name:   ${document.getElementById('m_casename').value || '—'}\n`;
+    out += `Industry:    ${document.getElementById('m_industry').value || '—'}\n`;
     out += `Difficulty:  ${document.getElementById('m_difficulty').value}\n\n`;
     out += 'Scale: 1 = Needs improvement, 2 = Good, 3 = Excellent\n\n';
 
